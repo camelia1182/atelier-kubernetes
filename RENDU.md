@@ -2,7 +2,7 @@
 
 > Complétez ce fichier au fil de l'atelier, puis faites un commit et un push (voir la section « Rendu » du README).
 
-**Nom / Prénom :**
+**Nom / Prénom :sarsoura camelia**
 **Groupe :**
 
 ---
@@ -10,9 +10,14 @@
 ## Exercice 1 — Cluster
 
 1. Combien de nœuds affiche `kubectl get nodes` ? Quel est le rôle de chacun ?
-   >
+   > La commande affiche 3 nœuds :
+- k3d-lab-server-0 : nœud manager, il gère le cluster.
+- k3d-lab-agent-0 : nœud worker, il exécute les applications.
+- k3d-lab-agent-1 : nœud worker, il exécute également les applications.
+ 
 2. Que montre `docker ps` ? Qu'est-ce qu'un « nœud » dans k3d, concrètement ?
-   >
+   > docker ps affiche les conteneurs Docker en cours d'exécution dans le cluster.
+   > Dans k3d, un nœud est concrètement un conteneur Docker qui représente une machine du cluster Kubernetes. Il peut gérer le cluster ou exécuter des applications.
 
 ## Exercice 2 — Premier déploiement
 
