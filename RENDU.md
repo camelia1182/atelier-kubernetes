@@ -22,9 +22,11 @@
 ## Exercice 2 — Premier déploiement
 
 3. Quels objets Kubernetes ont été créés par `kubectl create deployment` ? (indice : `kubectl get all`)
-   >
+   >Deployment : gère le déploiement de l'application.
+ReplicaSet : veille à maintenir le nombre de pods souhaité.
+Pod : contient le conteneur Nginx qui exécute l'application.
 4. Vous avez supprimé le pod `web-...` : que s'est-il passé, et pourquoi ?
-   >
+   >un pod a été recrée automatiquement
 
 ## Exercice 3 — Modifier un conteneur en direct
 
