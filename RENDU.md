@@ -45,16 +45,14 @@ Pod : contient le conteneur Nginx qui exécute l'application.
 ## Exercice 5 — Scaling & mises à jour
 
 9. Sur quels nœuds se trouvent vos 3 réplicas ? Collez la sortie de `kubectl get pods -l app=site -o wide`.
-   ```
-Les 3 réplicas sont répartis sur les trois nœuds :
-k3d-lab-agent-0
-k3d-lab-agent-1
-k3d-lab-server-0
+   ```Les 3 réplicas sont répartis sur les trois nœuds :
+                k3d-lab-agent-0
+                k3d-lab-agent-1
+                k3d-lab-server-0
 NAME                    READY   STATUS    RESTARTS   AGE   IP          NODE
 site-5cc664db9c-ptqmg   1/1     Running   0          99s   10.42.0.6   k3d-lab-agent-0
 site-5cc664db9c-t5k4x   1/1     Running   0          93s   10.42.2.7   k3d-lab-agent-1
-site-5cc664db9c-tcttf   1/1     Running   0          85s   10.42.1.8   k3d-lab-server-0
-   ```
+site-5cc664db9c-tcttf   1/1     Running   0          85s   10.42.1.8   k3d-lab-server-0```
 10. Avec l'image `nginx:9.99`, quel statut avait le pod ? Quelle commande vous a donné la cause ?
     >
 11. Pendant la panne, le site restait-il accessible ? Pourquoi ?
