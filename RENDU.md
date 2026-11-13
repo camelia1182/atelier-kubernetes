@@ -31,9 +31,9 @@ Pod : contient le conteneur Nginx qui exécute l'application.
 ## Exercice 3 — Modifier un conteneur en direct
 
 5. Après suppression du pod, votre message « Bienvenue... » a-t-il survécu ? Pourquoi ?
-   >
+   > Non, le message n'a pas survécu, car il était enregistrer uniquement dans le conteneur supprimé.
 6. Pourquoi le `port-forward` a-t-il cessé de fonctionner après la suppression du pod ?
-   >
+   > Le port-forward a cessé de fonctionner car il était connecté à l'ancien pod, qui a été supprimé.
 
 ## Exercice 4 — Déclaratif
 
