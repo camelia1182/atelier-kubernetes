@@ -38,9 +38,9 @@ Pod : contient le conteneur Nginx qui exécute l'application.
 ## Exercice 4 — Déclaratif
 
 7. Quelle différence entre `kubectl create` et `kubectl apply` ?
-   >
+   >."kubectl create" crée un objet Kubernetes alors que "kubectl apply" crée ou met à jour un objet à partir d'un fichier YAML.
 8. À quoi sert le `selector` d'un Service ? Que se passe-t-il s'il ne correspond à aucun pod ?
-   >
+   >.Le selector permet au Service de trouver les pods auxquels il doit envoyer le trafic. S'il ne correspond à aucun pod, le Service ne peut envoyer le trafic à aucune application
 
 ## Exercice 5 — Scaling & mises à jour
 
